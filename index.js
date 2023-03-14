@@ -5,7 +5,6 @@ const $totalAmountBtn = document.getElementById('total-amount-button');
 const $productTitle = document.getElementById('product-title');
 const $errorMessage = document.getElementById('budget-error');
 const $productTitleError = document.getElementById('product-title-error');
-const $productCostError = document.getElementById('product-cost-error');
 const $amount = document.getElementById('amount');
 const $expenditureValue = document.getElementById('expenditure-value');
 const $balanceValue = document.getElementById('balance-amount')
@@ -100,4 +99,5 @@ $checkAmountBtn.addEventListener('click', () => {
 
   $productTitle.value = '';
   $userAmount.value = '';
+  $productTitleError.classList.add('hide');
 })
